@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Библиотека дома</title>
+    <style type="text/css">
+     h1 {font-family:Arial;
+         font-size: 30px;
+         color: brown;
+         font-weight:bolder;}
+     h2 {font-family:'Times New Roman', Times, serif;
+         font-size: 20px;
+         color: rgb(194, 80, 3);
+         font-weight:bold}    
+     body {background-color:blanchedalmond }    
+    </style>
 </head>
 <body>
     <header id="header" class="headerStyle"> 
@@ -13,7 +24,7 @@
     <section>
         <article id="article" style="position: absolute;left: 420px;top: 150px;width: 1500px;height: 450px;z-index: 2">
             <h1>Список книг</h1>
-            <li>Стиен кинг"ОНО"</li>
+          <h2> <li>Стиен кинг"ОНО"</li>
             <li>Стиен кинг"Притивостояние"</li>
             <li>Стиен кинг"Под куполом"</li>
             <li>Стиен кинг"Безнадега"</li>
@@ -73,7 +84,7 @@
             <li>Джеймс Кравелл"Сёгун"</li>
             <li>Карманный справочнок Linux</li>
             <li>М.А.Булгаков"Мастер и Маргарита"</li>
-            <li>М.А.Булгаков"Собачье сердце"</li>
+            <li>М.А.Булгаков"Собачье сердце"</li></h2>
         </article>
     </section> 
     <section>
@@ -84,10 +95,11 @@
                 <input  name="Firstname" type="text"><br/><br/>
                 <Label>Фамилия</Label>
                 <input name="Lastname" type="text"><br/><br/>
-                <Label> выданная книга</Label>
+                <Label> книга</Label>
                 <input name="book" type="text"><br/><br/>
                 <label>Дата выдачи книги</label>
                 <input name="DOB" type="date"><br/><br/>
+                <button type="save">Сохранить</button>
         
             </form>      
         </article>
