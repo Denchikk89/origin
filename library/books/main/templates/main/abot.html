@@ -1,9 +1,4 @@
 {% extends 'main/base.html'%}
 {% block body %} <h1>моя домашняя библиотека</h1>
-    {% for element in Books %}
-        <div class="alert-warning mt-2">
-            <h3>{{element.Book}}</h3>
-            <p>{{element.author}}</p>
-        </div>
-    {% endfor %}
+
 {% endblock %}
