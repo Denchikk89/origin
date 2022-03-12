@@ -2,6 +2,9 @@
 {% block body %}
 <h1>добавление инфы</h1>
 <form method="post">
+    {% csrf_token %}
+    {{ form.Book_name }}
+    {{ form.author }}
     <input type="text" placeholder="название книги" class="form-control"><br>
     <input type="text" placeholder="автор" class="form-control"><br>
     <button type="submit" class="btn btn-success">добавить</button>

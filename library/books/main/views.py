@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from.models import Books
+from.forms import BooksForm
 
 
 def index(request):
@@ -16,5 +17,9 @@ def base(request):
 
 
 def create(request):
-    return render(request, 'main/create.html')
+    form = BooksForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'main/create.html', context)
 
