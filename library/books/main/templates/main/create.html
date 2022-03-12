@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'main/base.html'%}
+{% block body %}
+<h1>добавление инфы</h1>
+<form method="post">
+    <input type="text" placeholder="название книги" class="form-control"><br>
+    <input type="text" placeholder="автор" class="form-control"><br>
+    <button type="submit" class="btn btn-success">добавить</button>
+</form>
+{% endblock %}

@@ -4,7 +4,7 @@ from.models import Books
 
 def index(request):
     book = Books.objects.all()
-    return render(request, 'main/index.html', {'book':book})
+    return render(request, 'main/index.html', {'book': book})
 
 
 def about(request):
@@ -12,4 +12,9 @@ def about(request):
 
 
 def base(request):
-    return render(request, 'main/base.html')
+    return render(request, 'main/base.html'),
+
+
+def create(request):
+    return render(request, 'main/create.html')
+
