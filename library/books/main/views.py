@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from.models import Books
 from.forms import BooksForm
 
@@ -17,9 +17,18 @@ def base(request):
 
 
 def create(request):
+    error = ''
+    if request.method == 'POST':
+        form = BooksForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('list')
+        else:
+            error = 'написал хуйню'
     form = BooksForm()
     context = {
-        'form': form
+        'form': form,
+        'error': error
     }
     return render(request, 'main/create.html', context)
 
