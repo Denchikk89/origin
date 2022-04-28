@@ -1,6 +1,6 @@
 {% extends 'main/base.html'%}
 {% block body %}
-<h1>добавление инфы</h1>
+<h1>добавление новой книжки</h1>
 <form method="post">
     {% csrf_token %}
     {{ form.Book_name }}<br>
